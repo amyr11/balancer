@@ -35,7 +35,7 @@ for i in range(num_arrays):
     except ValueError:
         st.error(f"Invalid input in list {i+1}. Please enter valid numbers.")
 
-target_input = st.number_input("Enter target sum", value=789770.65)
+target_input = st.number_input("Enter target sum")
 
 if st.button("Find Combination"):
     result = balancer(*arrays, target=target_input)
